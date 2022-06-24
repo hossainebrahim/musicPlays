@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wapper">
+        <div class="top_ber">
+          <i class="fa-solid fa-arrow-left"></i>
+          <p class="title">playing now</p>
+          <div class="manu_ber">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+        <div class="medile_div">
+          <img src="11.jpg" alt="Music" />
+        </div>
+        <div class="main_part">
+          <div class="song_title">
+            <h4>abc</h4>
+            <p>la la</p>
+          </div>
+          <!-- progress ber -->
+          <div class="player">
+            <div>
+              <input type="range" min="0" />
+              <div class="progress"></div>
+            </div>
+            <span class="start">start</span>
+            <span class="end">end</span>
+          </div>
+          <!-- progress ber end -->
+          <!-- sound ber -->
+          <button class="sound_btn" onclick="myFunc()">
+            <i class="fa-solid fa-volume-high"></i>
+          </button>
+          <div class="sound myStyle slidecontainer">
+            <input
+              type="range"
+              min="0"
+              max="100"
+              step="1"
+              value="50"
+              class="slider"
+            />
+          </div>
+          <!-- sound btn end -->
+          <div class="song_contact_btn">
+            <button class="prv_btn">
+              <i class="fa-solid fa-backward-fast"></i>
+            </button>
+            <button class="start_pause">
+              <i class="fa-solid fa-play"></i>
+            </button>
+            <!-- <i class="fa-solid fa-pause"></i> -->
+            <button class="next_btn">
+              <i class="fa-solid fa-forward-fast"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="audios">
+        <audio class="audio" src="./audio/audio_song1.mp3"></audio>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
